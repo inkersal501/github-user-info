@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import { UserDataProps } from './types/userData';
 import UserInfo from './components/UserInfo';
-import SearchForm from './components/searchForm';
+import SearchForm from './components/SearchForm';
  
 function App() { 
 
