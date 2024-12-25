@@ -1,4 +1,10 @@
-export interface UserDataProps {
+
+type ErrorMsgProps = {
+    message: string,
+    documentation_url: string,
+    status: string
+}
+type UserDataProps = {
     login: string,
     avatar_url: string,
     name: string,
@@ -8,4 +14,4 @@ export interface UserDataProps {
     followers: number,
     following: number
 };
-  
+export type userInfo = UserDataProps & ErrorMsgProps;

@@ -5,6 +5,7 @@ function SearchForm({onSearch}: {onSearch: (username: string) => void}) {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         onSearch(username);
+        setUsername("");
       };
 
     return (
